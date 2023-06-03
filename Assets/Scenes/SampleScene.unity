@@ -426,5 +426,30 @@ PrefabInstance:
       propertyPath: m_AABB.m_Extent.z
       value: 0.117017046
       objectReference: {fileID: 0}
+    - target: {fileID: 4579072879029432358, guid: 4990ae0b2256fe5428e4841ac73d763f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4130315
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579072879029432358, guid: 4990ae0b2256fe5428e4841ac73d763f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.57070327
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579072879029432358, guid: 4990ae0b2256fe5428e4841ac73d763f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.35944825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579072879029432358, guid: 4990ae0b2256fe5428e4841ac73d763f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6119639
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 4990ae0b2256fe5428e4841ac73d763f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b20914db7b9e54a3fa1969b91421b9d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4990ae0b2256fe5428e4841ac73d763f, type: 3}
