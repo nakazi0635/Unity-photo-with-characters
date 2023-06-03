@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChengeButton : MonoBehaviour
 {
     [SerializeField] Animator anim; // アニメーターを操作するための変数
-    [HideInInspector] int posemode;
+    public int posemode;
     // Start is called before the first frame update
     void Start()
     {
