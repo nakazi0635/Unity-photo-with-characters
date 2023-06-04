@@ -47,17 +47,17 @@ public class Character : MonoBehaviour
     }
 
 
-    private void OnMouseDrag() // キャラクターがドラッグされたら
-    {
-        screenCharacterPosition = arCamera.WorldToScreenPoint(transform.position); // キャラクターのワールド座標(3D)をスクリーン座標(2D)に変換して、screenCharacterPositionに代入
+    // private void OnMouseDrag() // キャラクターがドラッグされたら
+    // {
+    //     screenCharacterPosition = arCamera.WorldToScreenPoint(transform.position); // キャラクターのワールド座標(3D)をスクリーン座標(2D)に変換して、screenCharacterPositionに代入
 
-        screenCharacterPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenCharacterPosition.z); //マウスポインタの位置を、screenCharacterPositionに代入
-        // screenCharacterPosition = new Vector3(Input.mousePosition.x + capsuleCollider.center.x, Input.mousePosition.y + capsuleCollider.center.y, screenCharacterPosition.z); //マウスポインタの位置を、screenCharacterPositionに代入
+    //     screenCharacterPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenCharacterPosition.z); //マウスポインタの位置を、screenCharacterPositionに代入
+    //     // screenCharacterPosition = new Vector3(Input.mousePosition.x + capsuleCollider.center.x, Input.mousePosition.y + capsuleCollider.center.y, screenCharacterPosition.z); //マウスポインタの位置を、screenCharacterPositionに代入
 
-        worldCharacterPosition = arCamera.ScreenToWorldPoint(screenCharacterPosition); //キャラクターのスクリーン座標(2D)をワールド座標(3D)に変換して、worldCharacterPositionに代入
+    //     worldCharacterPosition = arCamera.ScreenToWorldPoint(screenCharacterPosition); //キャラクターのスクリーン座標(2D)をワールド座標(3D)に変換して、worldCharacterPositionに代入
 
-        transform.position = worldCharacterPosition; //キャラクターの位置を、worldCharacterPositionにする
-    }
+    //     transform.position = worldCharacterPosition; //キャラクターの位置を、worldCharacterPositionにする
+    // }
 
     public void OnPushMoveUp() //上移動関数
     {
@@ -79,22 +79,32 @@ public class Character : MonoBehaviour
         transform.position += new Vector3(0.1f, 0, 0);
     }
 
-    public void OnPushRightRotationY() //右回転関数
+    public void OnPushMoveForward() //前移動関数
+    {
+        transform.position += new Vector3(0, 0, 0.1f);
+    }
+
+    public void OnPushMoveBack() //後移動関数
+    {
+        transform.position += new Vector3(0, 0, -0.1f);
+    }
+
+    public void OnPushRightRotationY() //Y軸右回転関数
     {
         transform.Rotate(0, 30, 0, Space.World);
     }
 
-    public void OnPushLeftRotationY() //右回転関数
+    public void OnPushLeftRotationY() //Y軸右回転関数
     {
         transform.Rotate(0, -30, 0, Space.World);
     }
 
-    public void OnPushRightRotationZ() //右回転関数
+    public void OnPushRightRotationZ() //Z軸右回転関数
     {
         transform.Rotate(0, 0, 30, Space.World);
     }
 
-    public void OnPushLeftRotationZ() //左回転関数
+    public void OnPushLeftRotationZ() //Z軸左回転関数
     {
         transform.Rotate(0, 0, -30, Space.World);
     }
