@@ -59,13 +59,43 @@ public class Character : MonoBehaviour
         transform.position = worldCharacterPosition; //キャラクターの位置を、worldCharacterPositionにする
     }
 
-    public void OnPushRightRotation() //右回転関数
+    public void OnPushMoveUp() //上移動関数
     {
-        transform.Rotate(0, 0, -30, Space.World);
+        transform.position += new Vector3(0, 0.1f, 0);
     }
 
-    public void OnPushLeftRotation() //左回転関数
+    public void OnPushMoveDown() //下移動関数
+    {
+        transform.position += new Vector3(0, -0.1f, 0);
+    }
+
+    public void OnPushMoveRight() //右移動関数
+    {
+        transform.position += new Vector3(-0.1f, 0, 0);
+    }
+
+    public void OnPushMoveLeft() //左移動関数
+    {
+        transform.position += new Vector3(0.1f, 0, 0);
+    }
+
+    public void OnPushRightRotationY() //右回転関数
+    {
+        transform.Rotate(0, 30, 0, Space.World);
+    }
+
+    public void OnPushLeftRotationY() //右回転関数
+    {
+        transform.Rotate(0, -30, 0, Space.World);
+    }
+
+    public void OnPushRightRotationZ() //右回転関数
     {
         transform.Rotate(0, 0, 30, Space.World);
+    }
+
+    public void OnPushLeftRotationZ() //左回転関数
+    {
+        transform.Rotate(0, 0, -30, Space.World);
     }
 }
