@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1785780312}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: OnPushLeftRotationZ
         m_Mode: 1
@@ -339,9 +339,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1785780310}
+      - m_Target: {fileID: 1785780312}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnPushRightRotationZ
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1785780312}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: OnPushMoveForward
         m_Mode: 1
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1785780312}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: OnPushMoveDown
         m_Mode: 1
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1785780312}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: OnPushReset
         m_Mode: 1
@@ -2644,7 +2644,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1785780312}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: OnPushMoveUp
         m_Mode: 1
@@ -2777,7 +2777,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1785780312}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: OnPushMoveLeft
         m_Mode: 1
