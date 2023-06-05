@@ -34,23 +34,23 @@ public class ScreenShot : MonoBehaviour
             yield break; // コルーチンを停止する
         }
 
-        isCreatingScreenShot = true;
+        isCreatingScreenShot = true; // trueにしてisCreatingScreenShotに代入
 
         yield return null; // 1フレーム分待つ
 
-        if (!Directory.Exists(path))
+        if (!Directory.Exists(path)) // 設定したパスのディレクトリがなかったら
         {
-            Directory.CreateDirectory(path);
+            Directory.CreateDirectory(path); // ディレクトリを生成する
         }
 
-        string date = DateTime.Now.ToString("yy-MM-dd_HH-mm-ss");
-        string fileName = path + date + ".png";
+        string date = DateTime.Now.ToString("yy-MM-dd_HH-mm-ss"); // 日時を取得してdateに代入
+        string fileName = path + date + ".png"; // スクショのファイル名決定
 
-        ScreenCapture.CaptureScreenshot(fileName);
+        ScreenCapture.CaptureScreenshot(fileName); // スクショする関数
 
-        yield return new WaitUntil(() => File.Exists(fileName));
+        yield return new WaitUntil(() => File.Exists(fileName)); // fileNameが存在するまで待機する
 
-        isCreatingScreenShot = false;
+        isCreatingScreenShot = false; // falseにしてisCreatingScreenShotに代入
 
         indicatesButtons.buttonOn.SetActive(true); // UIを表示する
         indicatesButtons.buttonOff.SetActive(true); // UIを表示にする

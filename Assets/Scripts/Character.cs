@@ -7,13 +7,16 @@ public class Character : MonoBehaviour
 {
     [Header("操作するオブジェクトの設定")]
     [SerializeField] 
-    GameObject capsuleColliderObject;
+    GameObject capsuleColliderObject; // キャラクターオブジェクト変数
     [HideInInspector] 
     CapsuleCollider capsuleCollider; // キャラのワールド座標(3D)変数
+    [HideInInspector]
+    Vector3 CharacterFirstPosition; // キャラクターの初期値を代入する変数
 
     void Start()
     {
-        capsuleCollider = capsuleColliderObject.GetComponent<CapsuleCollider>();
+        capsuleCollider = capsuleColliderObject.GetComponent<CapsuleCollider>(); // キャラクターのCapsuleColliderを取得して代入
+        CharacterFirstPosition = transform.position; // キャラクターの初期位置を代入
     }
     // Update is called once per frame
     void Update()
@@ -53,21 +56,25 @@ public class Character : MonoBehaviour
 
     public void OnPushRightRotationY() //Y軸右回転関数
     {
-        transform.Rotate(0, 30, 0, Space.World);
+        transform.Rotate(0, 20, 0, Space.World);
     }
 
     public void OnPushLeftRotationY() //Y軸右回転関数
     {
-        transform.Rotate(0, -30, 0, Space.World);
+        transform.Rotate(0, -20, 0, Space.World);
     }
 
     public void OnPushRightRotationZ() //Z軸右回転関数
     {
-        transform.Rotate(0, 0, 30, Space.World);
+        transform.Rotate(0, 0, 20, Space.World);
     }
 
     public void OnPushLeftRotationZ() //Z軸左回転関数
     {
-        transform.Rotate(0, 0, -30, Space.World);
+        transform.Rotate(0, 0, -20, Space.World);
+    }
+    public void OnPushReset() //ポジションを初期位置に戻す関数
+    {
+        transform.position = CharacterFirstPosition;
     }
 }
