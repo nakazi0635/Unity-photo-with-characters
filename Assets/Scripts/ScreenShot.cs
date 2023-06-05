@@ -4,40 +4,39 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+// ゲームビューをスクリーンショットするクラス
 public class ScreenShot : MonoBehaviour
 {
-
-
-    [Header("保存先の設定")]
+    [Header("保存先の設定")] // インスペクターに表示するヘッダーの設定
     [SerializeField]
-    string folderName = "Screenshots";
+    string folderName = "Screenshots"; // 写真を保存するフォルダーの設定
     [SerializeField]
-    IndicatesButton indicatesButtons;
-    bool isCreatingScreenShot = false;
-    string path;
+    IndicatesButton indicatesButtons; // 写真を撮る際にUIを非表示にするための変数
+    bool isCreatingScreenShot = false; // 写真を生成しているか判断する変数
+    string path; // 写真を保存するパスを指定する変数
 
     void Start()
     {
-        path = Application.dataPath + "/" + folderName + "/";
+        path = Application.dataPath + "/" + folderName + "/"; // 保存先のデータパスをpathに代入
     }
 
-    public void PrintScreen()
+    public void PrintScreen() // スクショボタンが押されてらPrintScreenが呼ばれる
     {
-        StartCoroutine("PrintScreenInternal");
+        StartCoroutine("PrintScreenInternal"); // PrintScreenInternalコルーチンを開始
     }
 
     IEnumerator PrintScreenInternal()
     {
-        indicatesButtons.buttonOn.SetActive(false);
-        indicatesButtons.buttonOff.SetActive(false);
+        indicatesButtons.buttonOn.SetActive(false); // UIを非表示にする
+        indicatesButtons.buttonOff.SetActive(false); // UIを非表示にする
         if (isCreatingScreenShot)
         {
-            yield break;
+            yield break; // コルーチンを停止する
         }
 
         isCreatingScreenShot = true;
 
-        yield return null;
+        yield return null; // 1フレーム分待つ
 
         if (!Directory.Exists(path))
         {
@@ -53,8 +52,8 @@ public class ScreenShot : MonoBehaviour
 
         isCreatingScreenShot = false;
 
-        indicatesButtons.buttonOn.SetActive(true);
-        indicatesButtons.buttonOff.SetActive(true);
+        indicatesButtons.buttonOn.SetActive(true); // UIを表示する
+        indicatesButtons.buttonOff.SetActive(true); // UIを表示にする
     }
 
 }
