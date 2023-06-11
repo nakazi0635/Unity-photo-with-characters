@@ -20,10 +20,13 @@ public class ChangePoseButton : MonoBehaviour
     public void OnClick() // ボタンを押したときの処理
     {
         if (pose_mode == 0){
-            anime.SetInteger("PoseNum", 1); // アニメーターに設定したPoseNum変数を1にする
+            anime.SetInteger("PoseNum", 1); // アニメーターに設定したPoseNum変数を0にする
             pose_mode = 1; // 次のポーズ番号を設定する
+        }else if(pose_mode == 1){
+            anime.SetInteger("PoseNum", 2); // アニメーターに設定したPoseNum変数を1にする
+            pose_mode = 2; // 次のポーズ番号を設定する
         }else{
-            anime.SetInteger("PoseNum", 0); // アニメーターに設定したPoseNum変数を1にする
+            anime.SetInteger("PoseNum", 0); // アニメーターに設定したPoseNum変数を2にする
             pose_mode = 0; // 次のポーズ番号を設定する
         }
     }
