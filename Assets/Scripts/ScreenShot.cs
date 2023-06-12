@@ -11,17 +11,24 @@ public class ScreenShot : MonoBehaviour
     [SerializeField]
     string folderName = "Screenshots"; // 写真を保存するフォルダーの設定
     [SerializeField]
+    AudioSource audioSource;
+    [SerializeField]
+    AudioClip shutter;
+    [SerializeField]
     IndicatesButton indicatesButtons; // 写真を撮る際にUIを非表示にするための変数
     bool isCreatingScreenShot = false; // 写真を生成しているか判断する変数
     string path; // 写真を保存するパスを指定する変数
+    
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         path = Application.dataPath + "/" + folderName + "/"; // 保存先のデータパスをpathに代入
     }
 
     public void PrintScreen() // スクショボタンが押されてらPrintScreenが呼ばれる
     {
+        audioSource.PlayOneShot(shutter);
         StartCoroutine("PrintScreenInternal"); // PrintScreenInternalコルーチンを開始
     }
 
