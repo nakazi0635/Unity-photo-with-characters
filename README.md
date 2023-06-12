@@ -6,7 +6,7 @@ The character used for shooting was created using MagicaVoxel and Mixamo.
 When a picture is taken, it is saved in Asset/Screenshots.
 
 # Demo
-
+<img width="676" alt="スクリーンショット 2023-06-12 23 44 22" src="https://github.com/nakazi0635/Unity-photo-with-characters/assets/91645661/38851d76-53d8-48e3-9d6d-421419917bbe">
 
 # Features
 
