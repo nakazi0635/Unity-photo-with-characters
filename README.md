@@ -24,6 +24,8 @@ You can also change the animation and the position of the light source.
 
 Publish to UnityPlay. ↓↓↓
 
+https://play.unity.com/mg/other/webgl-builds-353126
+
 * Remix
 
 Please clone the repository here
