@@ -13,23 +13,19 @@ internal static class HierarchyColorChange
 
     static HierarchyColorChange()
     {
-        Debug.Log(EditorApplication.hierarchyWindowItemOnGUI); // Null
 
         // EditorApplication.hierarchyWindowItemOnGUIは、HierarchyWindowにアクションがあるたびに呼ばれる
         // EditorApplication.hierarchyWindowItemOnGUIに、拡張メソッドを追加する
         EditorApplication.hierarchyWindowItemOnGUI += ColorChange;
 
-        Debug.Log(EditorApplication.hierarchyWindowItemOnGUI); // UnityEditor.EditorApplication+HierarchyWindowItemCallback
         // EditorApplication.hierarchyWindowItemOnGUI += Ontest;
 
-        Debug.Log(EditorApplication.hierarchyWindowItemOnGUI);
     }
 
     private static void ColorChange(int instanceID, Rect rect)
     {
         // Debug.Log("aaa");
         // rectの位置とオフセットから現在の行のインデックスを計算する
-        Debug.Log(rect.y);
         // シーンの表記は非適用にするため、rect.yを下げる
         // 上から何番目に表記されているかインデックス取得
         var index = (int)(rect.y - scene_text_height) / One_text_height;
