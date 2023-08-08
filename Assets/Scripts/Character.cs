@@ -13,7 +13,7 @@ public class Character : MonoBehaviour
     Vector3 CharacterFirstPosition; // キャラクターの初期値を代入する変数
     [HideInInspector]
     Quaternion CharacterFirstRotation; // キャラクターの初期回転値を代入する変数
-    
+    float speed = 5.0f;
 
     void Start()
     {
@@ -27,6 +27,13 @@ public class Character : MonoBehaviour
         if(Input.GetKey(KeyCode.UpArrow)){
             OnPushUpButton();
         }
+        if (Input.GetKey(KeyCode.RightArrow)){
+            OnPushRightButton();
+        }
+        if (Input.GetKey(KeyCode.LeftArrow)){
+            OnPushLeftButton();
+        }
+        
     }
 
     public void OnPushMoveUp() //上移動関数
@@ -84,6 +91,15 @@ public class Character : MonoBehaviour
         transform.rotation = CharacterFirstRotation;
     }
     public void OnPushUpButton(){
-        transform.position += new Vector3(0, 0, 0.03f);
+        Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection *= speed;
+        transform.position += moveDirection * Time.deltaTime;
+    }
+    public void OnPushRightButton(){
+        transform.Rotate(0, 1, 0, Space.World);
+    }
+    public void OnPushLeftButton(){
+        transform.Rotate(0, -1, 0, Space.World);
     }
 }
