@@ -5,7 +5,6 @@ using UnityEngine;
 // マウス操作でキャラクターを操作するクラス
 public class Character : MonoBehaviour
 {
-    [Header("操作するオブジェクトの設定")]
     [SerializeField] 
     GameObject capsuleColliderObject; // キャラクターオブジェクト変数
     [HideInInspector] 
@@ -14,6 +13,7 @@ public class Character : MonoBehaviour
     Vector3 CharacterFirstPosition; // キャラクターの初期値を代入する変数
     [HideInInspector]
     Quaternion CharacterFirstRotation; // キャラクターの初期回転値を代入する変数
+    
 
     void Start()
     {
@@ -24,7 +24,9 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(Input.GetKey(KeyCode.UpArrow)){
+            OnPushUpButton();
+        }
     }
 
     public void OnPushMoveUp() //上移動関数
@@ -80,5 +82,8 @@ public class Character : MonoBehaviour
     {
         transform.position = CharacterFirstPosition;
         transform.rotation = CharacterFirstRotation;
+    }
+    public void OnPushUpButton(){
+        transform.position += new Vector3(0, 0, 0.03f);
     }
 }
