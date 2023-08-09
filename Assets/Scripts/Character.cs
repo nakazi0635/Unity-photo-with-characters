@@ -97,9 +97,9 @@ public class Character : MonoBehaviour
         transform.position += moveDirection * Time.deltaTime;
     }
     public void OnPushRightButton(){
-        transform.Rotate(0, 1, 0, Space.World);
+        transform.Rotate(0, 2, 0, Space.World);
     }
     public void OnPushLeftButton(){
-        transform.Rotate(0, -1, 0, Space.World);
+        transform.Rotate(0, -2, 0, Space.World);
     }
 }
