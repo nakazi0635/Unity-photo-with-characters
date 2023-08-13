@@ -13,7 +13,8 @@ public class Character : MonoBehaviour
     Vector3 CharacterFirstPosition; // キャラクターの初期値を代入する変数
     [HideInInspector]
     Quaternion CharacterFirstRotation; // キャラクターの初期回転値を代入する変数
-    float speed = 5.0f;
+    private float speed = 5.0f;
+    private Vector3 nextPos;
 
     void Start()
     {
@@ -101,5 +102,12 @@ public class Character : MonoBehaviour
     }
     public void OnPushLeftButton(){
         transform.Rotate(0, -2, 0, Space.World);
+    }
+    private void OnMouseDrag(){
+        nextPos = GetMousePosition();
+        transform.position = Vector3.Lerp(transform.position, nextPos, Time.deltaTime);
+    }
+    private Vector3 GetMousePosition(){
+        return transform.position;
     }
 }
