@@ -109,6 +109,17 @@ public class Character : MonoBehaviour
     }
     private Vector3 GetMousePosition(){
         Debug.Log(transform.position);
-        return transform.position += new Vector3(0, 0, -0.2f);
+        // マウスのスクリーンポジションを取得
+        Vector3 mousePoint = Input.mousePosition;
+
+        mousePoint.y += -100;
+
+        // カメラからの距離を取得するためにZ座標を指定（例としてオブジェクトの位置を使用）
+        mousePoint.z = Camera.main.WorldToScreenPoint(transform.position).z;
+
+        // スクリーンポジションをワールドポジションに変換
+        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePoint);
+
+        return worldPosition;
     }
 }
