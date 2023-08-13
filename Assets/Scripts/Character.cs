@@ -108,6 +108,7 @@ public class Character : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, nextPos, Time.deltaTime);
     }
     private Vector3 GetMousePosition(){
-        return transform.position;
+        Debug.Log(transform.position);
+        return transform.position += new Vector3(0, 0, -0.2f);
     }
 }
