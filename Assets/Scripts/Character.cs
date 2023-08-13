@@ -91,21 +91,21 @@ public class Character : MonoBehaviour
         transform.position = CharacterFirstPosition;
         transform.rotation = CharacterFirstRotation;
     }
-    public void OnPushUpButton(){
+    public void OnPushUpButton(){ //上矢印キー関数
         Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
         transform.position += moveDirection * Time.deltaTime;
     }
-    public void OnPushRightButton(){
+    public void OnPushRightButton(){ //右矢印キー関数
         transform.Rotate(0, 2, 0, Space.World);
     }
-    public void OnPushLeftButton(){
+    public void OnPushLeftButton(){ //左矢印キー関数
         transform.Rotate(0, -2, 0, Space.World);
     }
     private void OnMouseDrag(){
         nextPos = GetMousePosition();
-        transform.position = Vector3.Lerp(transform.position, nextPos, Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, nextPos, Time.deltaTime * 5);
     }
     private Vector3 GetMousePosition(){
         Debug.Log(transform.position);

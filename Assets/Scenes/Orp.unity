@@ -2640,6 +2640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785780311}
   - component: {fileID: 1785780312}
+  - component: {fileID: 1785780313}
   m_Layer: 0
   m_Name: Chara&Spot
   m_TagString: Untagged
@@ -2677,6 +2678,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   capsuleColliderObject: {fileID: 350069386}
+--- !u!65 &1785780313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785780310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.7205834, y: 7.123044, z: 4.500309}
+  m_Center: {x: -0.005366564, y: 2.1862903, z: -0.58485556}
 --- !u!1 &1887239997
 GameObject:
   m_ObjectHideFlags: 0
