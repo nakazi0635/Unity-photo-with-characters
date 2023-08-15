@@ -339,9 +339,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1785780312}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
-        m_MethodName: OnPushChangeDragButton
+      - m_Target: {fileID: 992527974}
+        m_TargetAssemblyTypeName: IndicatesButton, Assembly-CSharp
+        m_MethodName: OnPushDragButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327233925}
   m_Layer: 5
-  m_Name: Buttons
+  m_Name: ButtonModeButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1576,9 +1576,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1785780312}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
-        m_MethodName: OnPushChangeDragButton
+      - m_Target: {fileID: 992527974}
+        m_TargetAssemblyTypeName: IndicatesButton, Assembly-CSharp
+        m_MethodName: OnPushOnButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: df3ecd6cc134e49e2969d3bdee3c2eac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e4235510645646289d98ccb25d61c16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1730,7 +1730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 854824597}
   m_Layer: 5
-  m_Name: Buttons
+  m_Name: DragModeButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2025,7 +2025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3838be2083944b299a4fcfadebca6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOn: {fileID: 854824596}
+  buttonOn: {fileID: 327233924}
+  buttonDragMode: {fileID: 854824596}
   buttonOff: {fileID: 1759074313}
 --- !u!114 &903045580
 MonoBehaviour:
@@ -2672,6 +2673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonOn: {fileID: 327233924}
+  buttonDragMode: {fileID: 854824596}
   buttonOff: {fileID: 1759074313}
 --- !u!82 &992527975
 AudioSource:
