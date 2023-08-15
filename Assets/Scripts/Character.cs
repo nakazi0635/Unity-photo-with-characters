@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     Quaternion CharacterFirstRotation; // キャラクターの初期回転値を代入する変数
     private float speed = 5.0f;
     private Vector3 nextPos;
-    private bool DragMode = false;
+    public IndicatesButton indicatesButton;
 
     void Start()
     {
@@ -104,16 +104,10 @@ public class Character : MonoBehaviour
     public void OnPushLeftButton(){ //左矢印キー関数
         transform.Rotate(0, -2, 0, Space.World);
     }
-    public void OnPushChangeDragButton() //ポジションを初期位置に戻す関数
-    {
-        if(DragMode){
-            DragMode = false;
-        }else{
-            DragMode = true;
-        }
-        Debug.Log(DragMode);
-    }
     private void OnMouseDrag(){
+        bool dragMode = indicatesButton.GetDragMode();
+        Debug.Log(dragMode);
+        if (!dragMode) return;
         nextPos = GetMousePosition();
         transform.position = Vector3.Lerp(transform.position, nextPos, Time.deltaTime * 5);
     }

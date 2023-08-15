@@ -3618,6 +3618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   capsuleColliderObject: {fileID: 350069386}
+  indicatesButton: {fileID: 992527974}
 --- !u!65 &1785780313
 BoxCollider:
   m_ObjectHideFlags: 0
