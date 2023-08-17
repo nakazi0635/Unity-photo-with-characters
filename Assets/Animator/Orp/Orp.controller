@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Getup-eye-Sleep
+  m_Name: Jump
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 046dff535a233480bacc4c641a1ccb9d,
+  m_Motion: {fileID: -203655887218126122, guid: bace5d0a707e24bd9a7f8fb92ad3a4d5,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -232,7 +232,7 @@ AnimatorStateMachine:
     m_Position: {x: 380, y: 270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8180337571299044906}
-    m_Position: {x: 590, y: 190, z: 0}
+    m_Position: {x: 640, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -694744904322964277}
     m_Position: {x: 510, y: 90, z: 0}
