@@ -26,15 +26,15 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.UpArrow)){
-            OnPushUpButton();
-        }
-        if (Input.GetKey(KeyCode.RightArrow)){
-            OnPushRightButton();
-        }
-        if (Input.GetKey(KeyCode.LeftArrow)){
-            OnPushLeftButton();
-        }
+        // if(Input.GetKey(KeyCode.UpArrow)){
+        //     OnPushUpButton();
+        // }
+        // if (Input.GetKey(KeyCode.RightArrow)){
+        //     OnPushRightButton();
+        // }
+        // if (Input.GetKey(KeyCode.LeftArrow)){
+        //     OnPushLeftButton();
+        // }
         
     }
 
