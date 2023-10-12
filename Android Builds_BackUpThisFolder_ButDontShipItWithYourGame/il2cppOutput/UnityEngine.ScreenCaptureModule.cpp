@@ -15,6 +15,8 @@
 // System.String
 struct String_t;
 
+IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_ScreenCaptureModule[];
+IL2CPP_EXTERN_C const RuntimeMethod* ScreenCapture_CaptureScreenshot_m1FAFDB15448C41E697212E54F852DDD196E15CFF_RuntimeMethod_var;
 
 
 IL2CPP_EXTERN_C_BEGIN
@@ -107,9 +109,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenCapture_CaptureScreenshot_mD9416E8
 // System.Void UnityEngine.ScreenCapture::CaptureScreenshot(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenCapture_CaptureScreenshot_m1FAFDB15448C41E697212E54F852DDD196E15CFF (String_t* ___filename0, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ScreenCapture_CaptureScreenshot_m1FAFDB15448C41E697212E54F852DDD196E15CFF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___filename0));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, ScreenCapture_CaptureScreenshot_m1FAFDB15448C41E697212E54F852DDD196E15CFF_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ScreenCaptureModule + 0));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_ScreenCaptureModule + 1));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ScreenCaptureModule + 2));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ScreenCaptureModule + 3));
 		String_t* L_0 = ___filename0;
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ScreenCaptureModule + 4));
 		ScreenCapture_CaptureScreenshot_mD9416E855CC184119DB9BE11CFA0787F49C7F608(L_0, 1, 1, NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ScreenCaptureModule + 4));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ScreenCaptureModule + 5));
 		return;
 	}
 }

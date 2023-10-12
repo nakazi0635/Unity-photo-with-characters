@@ -58,79 +58,81 @@ extern void Character_OnMouseDrag_m38D97F478DC0FE763903DFD513CE2069D1F4A896 (voi
 extern void Character_GetMousePosition_m00E12AB4742FBFA6422869F7CF0448318993F786 (void);
 // 0x00000017 System.Void Character::.ctor()
 extern void Character__ctor_m9D8D6104D9CB19DAE6866ECA929FFB0F2592DD19 (void);
-// 0x00000018 System.Void IndicatesButton::Start()
+// 0x00000018 System.Void ChengeCamera::Start()
+extern void ChengeCamera_Start_m90D7388B8A1D3C948E2ACF7D925059BBBF0EE0CA (void);
+// 0x00000019 System.Void ChengeCamera::Update()
+extern void ChengeCamera_Update_m7A4F9A6B2A38082C1FD814E10F46D6A6A790A64C (void);
+// 0x0000001A System.Void ChengeCamera::.ctor()
+extern void ChengeCamera__ctor_m44ADC88821988BAC4A31E7FA50294008B70ABA14 (void);
+// 0x0000001B System.Void IndicatesButton::Start()
 extern void IndicatesButton_Start_m687EFA3B1CD887D88657A657EB19FC6497148346 (void);
-// 0x00000019 System.Void IndicatesButton::Update()
+// 0x0000001C System.Void IndicatesButton::Update()
 extern void IndicatesButton_Update_m6834661C4A79B7518F20CF24BC7C81541031E8B1 (void);
-// 0x0000001A System.Boolean IndicatesButton::GetDragMode()
+// 0x0000001D System.Boolean IndicatesButton::GetDragMode()
 extern void IndicatesButton_GetDragMode_m562AE07E2EBE4C283C8D50021B0D697EBD73732E (void);
-// 0x0000001B System.Void IndicatesButton::OnPushOnButton()
+// 0x0000001E System.Void IndicatesButton::OnPushOnButton()
 extern void IndicatesButton_OnPushOnButton_mDE3EE3BE376A8747C6064634573441D793D141CC (void);
-// 0x0000001C System.Void IndicatesButton::OnPushOffButton()
+// 0x0000001F System.Void IndicatesButton::OnPushOffButton()
 extern void IndicatesButton_OnPushOffButton_m99DCE03CCB63D15B440F908391C41139EA21C739 (void);
-// 0x0000001D System.Void IndicatesButton::OnPushDragButton()
+// 0x00000020 System.Void IndicatesButton::OnPushDragButton()
 extern void IndicatesButton_OnPushDragButton_m69E5DBF769E30CB9E5567A153F9E385120B67379 (void);
-// 0x0000001E System.Void IndicatesButton::.ctor()
+// 0x00000021 System.Void IndicatesButton::.ctor()
 extern void IndicatesButton__ctor_m4523E0988DA12181DC10B0C358C54C360C76F035 (void);
-// 0x0000001F System.Void Lighting::Start()
+// 0x00000022 System.Void Lighting::Start()
 extern void Lighting_Start_m1C27FDCE1B8CC352F030B5296754BBF8146984A3 (void);
-// 0x00000020 System.Void Lighting::Update()
+// 0x00000023 System.Void Lighting::Update()
 extern void Lighting_Update_m0550E1BEB60B4B2DC3428D27E272CEFB949A5768 (void);
-// 0x00000021 System.Void Lighting::OnPushLight()
+// 0x00000024 System.Void Lighting::OnPushLight()
 extern void Lighting_OnPushLight_m45645010E45B24FF83346A57050C328589C5CEC6 (void);
-// 0x00000022 System.Void Lighting::.ctor()
+// 0x00000025 System.Void Lighting::.ctor()
 extern void Lighting__ctor_m49C7DF6B0560128103A6BCFD632FEB9DA3EA32EB (void);
-// 0x00000023 System.Void RecordController::Start()
+// 0x00000026 System.Void RecordController::Start()
 extern void RecordController_Start_m2B6E393DC16CA07F24647519FB0165F80355C3F8 (void);
-// 0x00000024 System.Void RecordController::ToggleRecording()
+// 0x00000027 System.Void RecordController::ToggleRecording()
 extern void RecordController_ToggleRecording_m4F6FA46401B6111D8D56A3360EA27C9BA7F6BC04 (void);
-// 0x00000025 System.Collections.IEnumerator RecordController::CaptureFrames()
+// 0x00000028 System.Collections.IEnumerator RecordController::CaptureFrames()
 extern void RecordController_CaptureFrames_m87A1559D5B4D4369340AF6C11A1E6BD04C3372A4 (void);
-// 0x00000026 System.Void RecordController::.ctor()
+// 0x00000029 System.Void RecordController::.ctor()
 extern void RecordController__ctor_m5CDB4655ADE84675573EEAE20E7C4DB130DF1A05 (void);
-// 0x00000027 System.Void RecordController/<CaptureFrames>d__7::.ctor(System.Int32)
+// 0x0000002A System.Void RecordController/<CaptureFrames>d__7::.ctor(System.Int32)
 extern void U3CCaptureFramesU3Ed__7__ctor_mC44BDF40D48C5CCDB8BEAB9077EAADE9AF32D8D5 (void);
-// 0x00000028 System.Void RecordController/<CaptureFrames>d__7::System.IDisposable.Dispose()
+// 0x0000002B System.Void RecordController/<CaptureFrames>d__7::System.IDisposable.Dispose()
 extern void U3CCaptureFramesU3Ed__7_System_IDisposable_Dispose_m2BCF7A0AEFBD0F2E574591AF568D6D440A25E84D (void);
-// 0x00000029 System.Boolean RecordController/<CaptureFrames>d__7::MoveNext()
+// 0x0000002C System.Boolean RecordController/<CaptureFrames>d__7::MoveNext()
 extern void U3CCaptureFramesU3Ed__7_MoveNext_mB5EF26CB1C72F87B9A7F3273CE7E55E1D9EB9384 (void);
-// 0x0000002A System.Object RecordController/<CaptureFrames>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000002D System.Object RecordController/<CaptureFrames>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CCaptureFramesU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1DF09693630871FA8A5A189E726EA14A31D34DB2 (void);
-// 0x0000002B System.Void RecordController/<CaptureFrames>d__7::System.Collections.IEnumerator.Reset()
+// 0x0000002E System.Void RecordController/<CaptureFrames>d__7::System.Collections.IEnumerator.Reset()
 extern void U3CCaptureFramesU3Ed__7_System_Collections_IEnumerator_Reset_m8BEADBF74E3953D7FD3E958142A46844F1A65D6E (void);
-// 0x0000002C System.Object RecordController/<CaptureFrames>d__7::System.Collections.IEnumerator.get_Current()
+// 0x0000002F System.Object RecordController/<CaptureFrames>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CCaptureFramesU3Ed__7_System_Collections_IEnumerator_get_Current_mAEE141764AF18AC6800047FF17B4EB29DB864C4F (void);
-// 0x0000002D System.Void ScreenShot::Start()
+// 0x00000030 System.Void ScreenShot::Start()
 extern void ScreenShot_Start_m4E8BFA79E9019258A74B1E3A55ABFF16DC3B8F0D (void);
-// 0x0000002E System.Void ScreenShot::PrintScreen()
+// 0x00000031 System.Void ScreenShot::PrintScreen()
 extern void ScreenShot_PrintScreen_m5E57459D4A7091B857AEB5EBE318F2A9963A99B3 (void);
-// 0x0000002F System.Collections.IEnumerator ScreenShot::PrintScreenInternal()
+// 0x00000032 System.Collections.IEnumerator ScreenShot::PrintScreenInternal()
 extern void ScreenShot_PrintScreenInternal_mFE27D327EC763CE4F40F5F05DC33CB69B56DAE92 (void);
-// 0x00000030 System.Void ScreenShot::.ctor()
+// 0x00000033 System.Void ScreenShot::.ctor()
 extern void ScreenShot__ctor_m88298D37AB40026949C887BC9FA253BDC3635CF0 (void);
-// 0x00000031 System.Void ScreenShot/<>c__DisplayClass8_0::.ctor()
-extern void U3CU3Ec__DisplayClass8_0__ctor_mE013440765171386E487DDB2CDE139EAC17E3223 (void);
-// 0x00000032 System.Boolean ScreenShot/<>c__DisplayClass8_0::<PrintScreenInternal>b__0()
-extern void U3CU3Ec__DisplayClass8_0_U3CPrintScreenInternalU3Eb__0_m66EA3E0DF8C18FF777447F1F926AE91B2AC5ADF7 (void);
-// 0x00000033 System.Void ScreenShot/<PrintScreenInternal>d__8::.ctor(System.Int32)
+// 0x00000034 System.Void ScreenShot/<PrintScreenInternal>d__8::.ctor(System.Int32)
 extern void U3CPrintScreenInternalU3Ed__8__ctor_m52AF6DB8ED9027DA156899EA4CDD0985C04D95DE (void);
-// 0x00000034 System.Void ScreenShot/<PrintScreenInternal>d__8::System.IDisposable.Dispose()
+// 0x00000035 System.Void ScreenShot/<PrintScreenInternal>d__8::System.IDisposable.Dispose()
 extern void U3CPrintScreenInternalU3Ed__8_System_IDisposable_Dispose_m4A6C8083BF1658F1E8B1C0CF8E4207593F979049 (void);
-// 0x00000035 System.Boolean ScreenShot/<PrintScreenInternal>d__8::MoveNext()
+// 0x00000036 System.Boolean ScreenShot/<PrintScreenInternal>d__8::MoveNext()
 extern void U3CPrintScreenInternalU3Ed__8_MoveNext_m8C8836FCA3DB44BE992C0BE8E2A586985BABC6BC (void);
-// 0x00000036 System.Object ScreenShot/<PrintScreenInternal>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000037 System.Object ScreenShot/<PrintScreenInternal>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CPrintScreenInternalU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0A63F7F6ED79F30EC0AD1808F8CD06112175A9CD (void);
-// 0x00000037 System.Void ScreenShot/<PrintScreenInternal>d__8::System.Collections.IEnumerator.Reset()
+// 0x00000038 System.Void ScreenShot/<PrintScreenInternal>d__8::System.Collections.IEnumerator.Reset()
 extern void U3CPrintScreenInternalU3Ed__8_System_Collections_IEnumerator_Reset_mB4BE7EE4C15B6A2148718CFC375C8626CD9B65A7 (void);
-// 0x00000038 System.Object ScreenShot/<PrintScreenInternal>d__8::System.Collections.IEnumerator.get_Current()
+// 0x00000039 System.Object ScreenShot/<PrintScreenInternal>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CPrintScreenInternalU3Ed__8_System_Collections_IEnumerator_get_Current_m09E8276FDBA9734F297008365CAACB2FAA2DC77A (void);
-// 0x00000039 System.Void UploadModel::.ctor()
+// 0x0000003A System.Void UploadModel::.ctor()
 extern void UploadModel__ctor_m03EF37446781E3C752863A3BF6D1FA2BBB5CC067 (void);
-// 0x0000003A System.String VuforiaLicense::GetLicenseKey()
+// 0x0000003B System.String VuforiaLicense::GetLicenseKey()
 extern void VuforiaLicense_GetLicenseKey_m8E6E03709CDB6968425A93FB9D016DA6AFC6C91B (void);
-// 0x0000003B System.Void VuforiaLicense::.ctor()
+// 0x0000003C System.Void VuforiaLicense::.ctor()
 extern void VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B (void);
-static Il2CppMethodPointer s_methodPointers[59] = 
+static Il2CppMethodPointer s_methodPointers[60] = 
 {
 	ChangePoseButton_Start_m62EAD768078AD8DDABD5AC33D2373A90B7899B73,
 	ChangePoseButton_Update_m3BEF3917D789490C9817F34C2FF94980006317F8,
@@ -155,6 +157,9 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	Character_OnMouseDrag_m38D97F478DC0FE763903DFD513CE2069D1F4A896,
 	Character_GetMousePosition_m00E12AB4742FBFA6422869F7CF0448318993F786,
 	Character__ctor_m9D8D6104D9CB19DAE6866ECA929FFB0F2592DD19,
+	ChengeCamera_Start_m90D7388B8A1D3C948E2ACF7D925059BBBF0EE0CA,
+	ChengeCamera_Update_m7A4F9A6B2A38082C1FD814E10F46D6A6A790A64C,
+	ChengeCamera__ctor_m44ADC88821988BAC4A31E7FA50294008B70ABA14,
 	IndicatesButton_Start_m687EFA3B1CD887D88657A657EB19FC6497148346,
 	IndicatesButton_Update_m6834661C4A79B7518F20CF24BC7C81541031E8B1,
 	IndicatesButton_GetDragMode_m562AE07E2EBE4C283C8D50021B0D697EBD73732E,
@@ -180,8 +185,6 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	ScreenShot_PrintScreen_m5E57459D4A7091B857AEB5EBE318F2A9963A99B3,
 	ScreenShot_PrintScreenInternal_mFE27D327EC763CE4F40F5F05DC33CB69B56DAE92,
 	ScreenShot__ctor_m88298D37AB40026949C887BC9FA253BDC3635CF0,
-	U3CU3Ec__DisplayClass8_0__ctor_mE013440765171386E487DDB2CDE139EAC17E3223,
-	U3CU3Ec__DisplayClass8_0_U3CPrintScreenInternalU3Eb__0_m66EA3E0DF8C18FF777447F1F926AE91B2AC5ADF7,
 	U3CPrintScreenInternalU3Ed__8__ctor_m52AF6DB8ED9027DA156899EA4CDD0985C04D95DE,
 	U3CPrintScreenInternalU3Ed__8_System_IDisposable_Dispose_m4A6C8083BF1658F1E8B1C0CF8E4207593F979049,
 	U3CPrintScreenInternalU3Ed__8_MoveNext_m8C8836FCA3DB44BE992C0BE8E2A586985BABC6BC,
@@ -192,73 +195,75 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	VuforiaLicense_GetLicenseKey_m8E6E03709CDB6968425A93FB9D016DA6AFC6C91B,
 	VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B,
 };
-static const int32_t s_InvokerIndices[59] = 
+static const int32_t s_InvokerIndices[60] = 
 {
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4923,
-	4931,
-	4931,
-	4931,
-	4769,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4931,
-	4837,
-	4931,
-	3892,
-	4931,
-	4769,
-	4837,
-	4931,
-	4837,
-	4931,
-	4931,
-	4837,
-	4931,
-	4931,
-	4769,
-	3892,
-	4931,
-	4769,
-	4837,
-	4931,
-	4837,
-	4931,
-	7385,
-	4931,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4969,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4815,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4977,
+	4883,
+	4977,
+	3918,
+	4977,
+	4815,
+	4883,
+	4977,
+	4883,
+	4977,
+	4977,
+	4883,
+	4977,
+	3918,
+	4977,
+	4815,
+	4883,
+	4977,
+	4883,
+	4977,
+	7512,
+	4977,
 };
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationAssemblyU2DCSharp;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	59,
+	60,
 	s_methodPointers,
 	0,
 	NULL,
@@ -269,7 +274,7 @@ const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule =
 	NULL,
 	0,
 	NULL,
-	NULL,
+	&g_DebuggerMetadataRegistrationAssemblyU2DCSharp,
 	NULL, // module initializer,
 	NULL,
 	NULL,
