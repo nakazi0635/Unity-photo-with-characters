@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+#if UNITY_ANDROID
+using UnityEngine.Android;
+#endif
 
 // ゲームビューをスクリーンショットするクラス
 public class ScreenShot : MonoBehaviour
@@ -23,7 +26,17 @@ public class ScreenShot : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        path = Application.dataPath + "/" + folderName + "/"; // 保存先のデータパスをpathに代入
+        #if UNITY_ANDROID
+            Debug.Log("Android");
+            path = Path.Combine(Application.persistentDataPath, folderName);
+            if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
+            {
+                Permission.RequestUserPermission(Permission.ExternalStorageWrite);
+            }
+        #else
+            Debug.Log("else");
+            path = Application.dataPath + "/" + folderName + "/";
+        #endif
     }
 
     public void PrintScreen() // スクショボタンが押されてらPrintScreenが呼ばれる
@@ -51,7 +64,9 @@ public class ScreenShot : MonoBehaviour
         }
 
         string date = DateTime.Now.ToString("yy-MM-dd_HH-mm-ss"); // 日時を取得してdateに代入
-        string fileName = path + date + ".png"; // スクショのファイル名決定
+        // string fileName = path + date + ".png"; 
+        string fileName = Path.Combine(path, date + ".png"); // スクショのファイル名決定
+        
 
         ScreenCapture.CaptureScreenshot(fileName); // スクショする関数
 
