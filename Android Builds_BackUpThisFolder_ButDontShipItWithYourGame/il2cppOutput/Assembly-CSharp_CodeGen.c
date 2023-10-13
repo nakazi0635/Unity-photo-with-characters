@@ -114,18 +114,18 @@ extern void ScreenShot_PrintScreen_m5E57459D4A7091B857AEB5EBE318F2A9963A99B3 (vo
 extern void ScreenShot_PrintScreenInternal_mFE27D327EC763CE4F40F5F05DC33CB69B56DAE92 (void);
 // 0x00000033 System.Void ScreenShot::.ctor()
 extern void ScreenShot__ctor_m88298D37AB40026949C887BC9FA253BDC3635CF0 (void);
-// 0x00000034 System.Void ScreenShot/<PrintScreenInternal>d__8::.ctor(System.Int32)
-extern void U3CPrintScreenInternalU3Ed__8__ctor_m52AF6DB8ED9027DA156899EA4CDD0985C04D95DE (void);
-// 0x00000035 System.Void ScreenShot/<PrintScreenInternal>d__8::System.IDisposable.Dispose()
-extern void U3CPrintScreenInternalU3Ed__8_System_IDisposable_Dispose_m4A6C8083BF1658F1E8B1C0CF8E4207593F979049 (void);
-// 0x00000036 System.Boolean ScreenShot/<PrintScreenInternal>d__8::MoveNext()
-extern void U3CPrintScreenInternalU3Ed__8_MoveNext_m8C8836FCA3DB44BE992C0BE8E2A586985BABC6BC (void);
-// 0x00000037 System.Object ScreenShot/<PrintScreenInternal>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CPrintScreenInternalU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0A63F7F6ED79F30EC0AD1808F8CD06112175A9CD (void);
-// 0x00000038 System.Void ScreenShot/<PrintScreenInternal>d__8::System.Collections.IEnumerator.Reset()
-extern void U3CPrintScreenInternalU3Ed__8_System_Collections_IEnumerator_Reset_mB4BE7EE4C15B6A2148718CFC375C8626CD9B65A7 (void);
-// 0x00000039 System.Object ScreenShot/<PrintScreenInternal>d__8::System.Collections.IEnumerator.get_Current()
-extern void U3CPrintScreenInternalU3Ed__8_System_Collections_IEnumerator_get_Current_m09E8276FDBA9734F297008365CAACB2FAA2DC77A (void);
+// 0x00000034 System.Void ScreenShot/<PrintScreenInternal>d__10::.ctor(System.Int32)
+extern void U3CPrintScreenInternalU3Ed__10__ctor_m650E7AB584E2A661B394DF0BA92C616F4431F19E (void);
+// 0x00000035 System.Void ScreenShot/<PrintScreenInternal>d__10::System.IDisposable.Dispose()
+extern void U3CPrintScreenInternalU3Ed__10_System_IDisposable_Dispose_m234A6729CA03512004BB7D0FB5A9DB22207F5F2F (void);
+// 0x00000036 System.Boolean ScreenShot/<PrintScreenInternal>d__10::MoveNext()
+extern void U3CPrintScreenInternalU3Ed__10_MoveNext_mD3728FCDE0EEAF29250B3D4AD2023A4EC6D2C976 (void);
+// 0x00000037 System.Object ScreenShot/<PrintScreenInternal>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CPrintScreenInternalU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCC17C9610622ABD7A661857CE2195F7389E9FFD6 (void);
+// 0x00000038 System.Void ScreenShot/<PrintScreenInternal>d__10::System.Collections.IEnumerator.Reset()
+extern void U3CPrintScreenInternalU3Ed__10_System_Collections_IEnumerator_Reset_m6468E129CB391F5AE82FA40BECB1F534F5A167E6 (void);
+// 0x00000039 System.Object ScreenShot/<PrintScreenInternal>d__10::System.Collections.IEnumerator.get_Current()
+extern void U3CPrintScreenInternalU3Ed__10_System_Collections_IEnumerator_get_Current_m103610799AFD7F795006CA685F99AC3567D88457 (void);
 // 0x0000003A System.Void UploadModel::.ctor()
 extern void UploadModel__ctor_m03EF37446781E3C752863A3BF6D1FA2BBB5CC067 (void);
 // 0x0000003B System.String VuforiaLicense::GetLicenseKey()
@@ -185,80 +185,79 @@ static Il2CppMethodPointer s_methodPointers[60] =
 	ScreenShot_PrintScreen_m5E57459D4A7091B857AEB5EBE318F2A9963A99B3,
 	ScreenShot_PrintScreenInternal_mFE27D327EC763CE4F40F5F05DC33CB69B56DAE92,
 	ScreenShot__ctor_m88298D37AB40026949C887BC9FA253BDC3635CF0,
-	U3CPrintScreenInternalU3Ed__8__ctor_m52AF6DB8ED9027DA156899EA4CDD0985C04D95DE,
-	U3CPrintScreenInternalU3Ed__8_System_IDisposable_Dispose_m4A6C8083BF1658F1E8B1C0CF8E4207593F979049,
-	U3CPrintScreenInternalU3Ed__8_MoveNext_m8C8836FCA3DB44BE992C0BE8E2A586985BABC6BC,
-	U3CPrintScreenInternalU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0A63F7F6ED79F30EC0AD1808F8CD06112175A9CD,
-	U3CPrintScreenInternalU3Ed__8_System_Collections_IEnumerator_Reset_mB4BE7EE4C15B6A2148718CFC375C8626CD9B65A7,
-	U3CPrintScreenInternalU3Ed__8_System_Collections_IEnumerator_get_Current_m09E8276FDBA9734F297008365CAACB2FAA2DC77A,
+	U3CPrintScreenInternalU3Ed__10__ctor_m650E7AB584E2A661B394DF0BA92C616F4431F19E,
+	U3CPrintScreenInternalU3Ed__10_System_IDisposable_Dispose_m234A6729CA03512004BB7D0FB5A9DB22207F5F2F,
+	U3CPrintScreenInternalU3Ed__10_MoveNext_mD3728FCDE0EEAF29250B3D4AD2023A4EC6D2C976,
+	U3CPrintScreenInternalU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCC17C9610622ABD7A661857CE2195F7389E9FFD6,
+	U3CPrintScreenInternalU3Ed__10_System_Collections_IEnumerator_Reset_m6468E129CB391F5AE82FA40BECB1F534F5A167E6,
+	U3CPrintScreenInternalU3Ed__10_System_Collections_IEnumerator_get_Current_m103610799AFD7F795006CA685F99AC3567D88457,
 	UploadModel__ctor_m03EF37446781E3C752863A3BF6D1FA2BBB5CC067,
 	VuforiaLicense_GetLicenseKey_m8E6E03709CDB6968425A93FB9D016DA6AFC6C91B,
 	VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B,
 };
 static const int32_t s_InvokerIndices[60] = 
 {
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4969,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4815,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4977,
-	4883,
-	4977,
-	3918,
-	4977,
-	4815,
-	4883,
-	4977,
-	4883,
-	4977,
-	4977,
-	4883,
-	4977,
-	3918,
-	4977,
-	4815,
-	4883,
-	4977,
-	4883,
-	4977,
-	7512,
-	4977,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5144,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	4976,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5153,
+	5048,
+	5153,
+	4061,
+	5153,
+	4976,
+	5048,
+	5153,
+	5048,
+	5153,
+	5153,
+	5048,
+	5153,
+	4061,
+	5153,
+	4976,
+	5048,
+	5153,
+	5048,
+	5153,
+	7637,
+	5153,
 };
-extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationAssemblyU2DCSharp;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
@@ -274,7 +273,7 @@ const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule =
 	NULL,
 	0,
 	NULL,
-	&g_DebuggerMetadataRegistrationAssemblyU2DCSharp,
+	NULL,
 	NULL, // module initializer,
 	NULL,
 	NULL,
