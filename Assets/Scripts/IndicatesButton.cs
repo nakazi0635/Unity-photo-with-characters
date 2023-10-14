@@ -8,11 +8,13 @@ public class IndicatesButton : MonoBehaviour
     public GameObject buttonOn; // 編集キャンバス
     public GameObject buttonDragMode; // ドラッグキャンバス
     public GameObject buttonOff; // 確認キャンバス
+    public GameObject selectMode; // 選択キャンバス
     private bool dragMode = false;
     // Start is called before the first frame update
     void Start()
     {
         buttonOff.SetActive(false); // 確認キャンバスを非表示
+        selectMode.SetActive(false); // 選択キャンバスを非表示
     }
 
     // Update is called once per frame
@@ -41,5 +43,12 @@ public class IndicatesButton : MonoBehaviour
         buttonOff.SetActive(false); // 確認キャンバスを表示
         buttonDragMode.SetActive(true); // ドラッグキャンバスを表示
         dragMode = true;
+    }
+    public void OnPushSelectCharacterButton(){
+        buttonOn.SetActive(false); // 編集キャンバスを非表示
+        buttonOff.SetActive(false); // 確認キャンバスを表示
+        buttonDragMode.SetActive(false); // ドラッグキャンバスを表示
+        selectMode.SetActive(true); // 選択キャンバスを非表示
+        dragMode = false;
     }
 }
