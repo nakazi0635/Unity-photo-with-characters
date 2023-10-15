@@ -31,22 +31,10 @@ public class ScreenShot : MonoBehaviour
 
     void Start()
     {
-        // audioSource = GetComponent<AudioSource>();
-        // #if UNITY_ANDROID
-        //     Debug.Log("Android");
-        //     path = Path.Combine(Application.persistentDataPath, folderName);
-        //     if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
-        //     {
-        //         Permission.RequestUserPermission(Permission.ExternalStorageWrite);
-        //     }
-        // #else
-        //     Debug.Log("else");
-        //     path = Application.dataPath + "/" + folderName + "/";
-        // #endif
         audioSource = GetComponent<AudioSource>();
+        savePathGroup.SetActive(false);
     #if UNITY_ANDROID
         Debug.Log("Android");
-        // /Android/media/ へのパスを設定します。
         path = $"/storage/emulated/0/Android/media/{Application.productName}/{folderName}";
         if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
         {
@@ -82,9 +70,6 @@ public class ScreenShot : MonoBehaviour
         {
             Directory.CreateDirectory(path); // ディレクトリを生成する
         }
-
-        //string date = DateTime.Now.ToString("yy-MM-dd_HH-mm-ss"); // 日時を取得してdateに代入
-        // string fileName = path + date + ".png"; 
         string fileName = $"{System.DateTime.Now.ToString("yyyyMMddHHmmss")}.png"; // スクショのファイル名決定
         
 
@@ -93,40 +78,39 @@ public class ScreenShot : MonoBehaviour
         string filePath = string.Empty;
 
         #if UNITY_EDITOR
-            // プラットフォームがエディターだったときのファイルの保存先
-            filePath = $"{Application.dataPath.Replace("/Assets", string.Empty)}/{fileName}";
+            // エディターの場合のファイル保存先
+            filePath = $"Saved in {Application.dataPath.Replace("/Assets", string.Empty)}/{fileName}";
         #elif UNITY_IOS || UNITY_ANDROID
-            // プラットフォームがモバイルだったときのファイルの保存先
-            filePath = $"{Application.persistentDataPath}/{fileName}";
+            // モバイルの場合のファイル保存先
+            filePath = $"Saved in {Application.persistentDataPath}/{fileName}";
         #endif
 
         savePathGroup.SetActive(true);
 
-        // ファイルの保存先が取得できなかったとき
+        // ファイルの保存先が見つからなかったとき
         if(filePath == string.Empty)
         {
-            // 以下の処理は省略
-            savePathText.text = "ファイルの保存先が取得できませんでした。";
+            savePathText.text = "Could not retrieve the location of the file.";
             yield break;
         }
+        Debug.Log("1");
+        // while (!System.IO.File.Exists(filePath))
+        // {
+        //     // 1フレーム待機する
+        //     yield return null;
+        // }
+        Debug.Log("2");
 
-        while (!System.IO.File.Exists(filePath))
-        {
-            // 1フレーム待機する
-            yield return null;
-        }
-
-        // yield return new WaitUntil(() => File.Exists(fileName)); // fileNameが存在するまで待機する
 
         isCreatingScreenShot = false; // falseにしてisCreatingScreenShotに代入
 
         indicatesButtons.buttonOn.SetActive(true); // UIを表示する
         indicatesButtons.buttonOff.SetActive(true); // UIを表示にする
-
-        // 撮影した画像の保存先を表示するためのUIグループを表示する
+        Debug.Log("1");
+        // 画像の保存先を表示する
         savePathGroup.SetActive(true);
-        
-        // 撮影した画像の保存先を表示する
+        Debug.Log(filePath);
+        // 撮影した画像の保存先パスを表示する
         savePathText.text = filePath;
 
         // 3秒待機する（3秒画像の保存先を表示する）
