@@ -51,4 +51,11 @@ public class IndicatesButton : MonoBehaviour
         selectMode.SetActive(true); // 選択キャンバスを非表示
         dragMode = false;
     }
+    public void OnPushCloseSelectCharacterButton(){
+        buttonOn.SetActive(true); // 編集キャンバスを非表示
+        buttonOff.SetActive(false); // 確認キャンバスを表示
+        buttonDragMode.SetActive(false); // ドラッグキャンバスを表示
+        selectMode.SetActive(false); // 選択キャンバスを非表示
+        dragMode = false;
+    }
 }
