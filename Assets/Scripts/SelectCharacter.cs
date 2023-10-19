@@ -20,4 +20,22 @@ public class SelectCharacter : MonoBehaviour
     {
         
     }
+
+    public void FirstCharacterButton(){
+        firstCharacter.SetActive(true);
+        secondCharacter.SetActive(false);
+        thirdCharacter.SetActive(false);
+    }
+
+    public void SecondCharacterButton(){
+        firstCharacter.SetActive(false);
+        secondCharacter.SetActive(true);
+        thirdCharacter.SetActive(false);
+    }
+
+    public void ThirdCharacterButton(){
+        firstCharacter.SetActive(false);
+        secondCharacter.SetActive(false);
+        thirdCharacter.SetActive(true);
+    }
 }

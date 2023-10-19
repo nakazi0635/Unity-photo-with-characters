@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 184477328}
   - component: {fileID: 184477327}
   m_Layer: 5
-  m_Name: SelectCharacterButton (1)
+  m_Name: SelectCharacterButton2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -608,6 +608,18 @@ MonoBehaviour:
       - m_Target: {fileID: 992527974}
         m_TargetAssemblyTypeName: IndicatesButton, Assembly-CSharp
         m_MethodName: OnPushSelectCharacterButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1764675383}
+        m_TargetAssemblyTypeName: SelectCharacter, Assembly-CSharp
+        m_MethodName: SecondCharacterButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3200,7 +3212,7 @@ GameObject:
   - component: {fileID: 1001648198}
   - component: {fileID: 1001648197}
   m_Layer: 5
-  m_Name: SelectCharacterButton (3)
+  m_Name: backButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3586,6 +3598,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068094518}
   m_CullTransparentMesh: 1
+--- !u!1 &1162337156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162337157}
+  - component: {fileID: 1162337160}
+  - component: {fileID: 1162337159}
+  - component: {fileID: 1162337158}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1162337157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162337156}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1785780311}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1162337158
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162337156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1162337159
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162337156}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1162337160
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162337156}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1198662560
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,7 +3848,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1b39259de8ccc4b7b8584a941a091cc4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b39259de8ccc4b7b8584a941a091cc4,
         type: 3}
@@ -4137,7 +4246,7 @@ GameObject:
   - component: {fileID: 1485471027}
   - component: {fileID: 1485471026}
   m_Layer: 5
-  m_Name: SelectCharacterButton (2)
+  m_Name: SelectCharacterButton3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4210,6 +4319,18 @@ MonoBehaviour:
       - m_Target: {fileID: 992527974}
         m_TargetAssemblyTypeName: IndicatesButton, Assembly-CSharp
         m_MethodName: OnPushSelectCharacterButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1764675383}
+        m_TargetAssemblyTypeName: SelectCharacter, Assembly-CSharp
+        m_MethodName: ThirdCharacterButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4652,6 +4773,7 @@ GameObject:
   - component: {fileID: 1764675379}
   - component: {fileID: 1764675378}
   - component: {fileID: 1764675382}
+  - component: {fileID: 1764675383}
   m_Layer: 5
   m_Name: SelectCharacter
   m_TagString: Untagged
@@ -4761,6 +4883,21 @@ MonoBehaviour:
   buttonDragMode: {fileID: 0}
   buttonOff: {fileID: 0}
   selectMode: {fileID: 0}
+--- !u!114 &1764675383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764675377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0db6f6bcb5e4ddd897a8a1ab3ecb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstCharacter: {fileID: 350069386}
+  secondCharacter: {fileID: 677905975}
+  thirdCharacter: {fileID: 1162337156}
 --- !u!1 &1785780310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4793,6 +4930,7 @@ Transform:
   m_Children:
   - {fileID: 227817892}
   - {fileID: 677905976}
+  - {fileID: 1162337157}
   - {fileID: 350069389}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -5532,7 +5670,7 @@ GameObject:
   - component: {fileID: 2105830570}
   - component: {fileID: 2105830569}
   m_Layer: 5
-  m_Name: SelectCharacterButton
+  m_Name: SelectCharacterButton1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5605,6 +5743,18 @@ MonoBehaviour:
       - m_Target: {fileID: 992527974}
         m_TargetAssemblyTypeName: IndicatesButton, Assembly-CSharp
         m_MethodName: OnPushSelectCharacterButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1764675383}
+        m_TargetAssemblyTypeName: SelectCharacter, Assembly-CSharp
+        m_MethodName: FirstCharacterButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
